@@ -1,0 +1,106 @@
+@import "_vars.sass"
+@import url('https://rsms.me/inter/inter.css')
+
+html
+    background: $bg
+
+    *
+        color: white
+        transition: 0.2s
+        font-family: 'Inter', sans-serif
+
+body
+    margin: 4rem
+
+div.tip
+    max-width: max-content
+    padding: .5rem
+    padding-left: 1rem
+    border-left: 3px solid $accent
+    margin: 2rem
+    margin-left: 0
+
+div.login    
+    *
+        font-size: 1.2rem
+
+    div.container
+        margin: 1rem
+        display: grid
+        grid-template-columns: 100px auto
+
+    input[type="checkbox"]
+        cursor: pointer
+        transform: scale(1.5)
+        margin-right: .5rem
+
+    input:not([type="checkbox"]), button
+        width: 500px
+        padding: 0.5rem
+        border-radius: 5px
+        border: none
+        background: $bg-light
+
+        &:focus
+            outline: none
+
+    button
+        border: 1px solid $accent
+        cursor: pointer
+
+        &:hover
+            background: $accent
+
+@media (max-width: 777px)
+    div.login
+        div.container
+            input:not([type="checkbox"])
+                width: 60vw !important
+
+        button
+            width: 100%
+
+    body
+        margin: 1rem
+
+h1
+    a
+        opacity: 0.5
+        font-size: 1rem
+
+table.timetable
+    width: 100%
+    height: 100%
+
+    td.lesson
+        width: 50px
+        opacity: 0.5
+
+    th .date
+        font-weight: normal
+        opacity: 0.5
+
+    th, td
+        text-align: center
+
+    tr
+        *
+            padding-bottom: 1rem
+
+    tr
+        td
+            div.entry
+                text-align: center
+                margin: auto
+
+                width: 80%
+                height: 200px
+
+                padding: 1rem
+                border: 1px solid $bg-light
+
+                span
+                    display: block
+
+                    &.title
+                        font-weight: bold

@@ -1,0 +1,26 @@
+{% include 'components/top.html' %}
+<body>
+    <h1>📚 Welcome, {{ name }}! <a href="/logout">Logout</a></h1>
+
+    <table class="timetable">
+        <tr>
+            <th class="lesson"></th>
+            <th>Mo <span class="date">10.10.2023</span></th>
+            <th>Di <span class="date">11.10.2023</span></th>
+            <th>Mi <span class="date">12.10.2023</span></th>
+            <th>Do <span class="date">13.10.2023</span></th>
+            <th>Fr <span class="date">14.10.2023</span></th>
+        </tr>
+        <tr>
+            <td class="lesson">8:00</td>
+            <td>
+                <div class="entry">
+                    <span class="title">Deutsch</span>
+                    <span class="teacher">Mr. White</span>
+                    <span class="room">123</span>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+{% include 'components/end.html' %}

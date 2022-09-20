@@ -1,4 +1,5 @@
-import api
+import planeo.api as api
+
 import datetime
 
 def get_student_id(first_name: str=None, last_name: str=None) -> int:

@@ -1,0 +1,104 @@
+@import url("https://rsms.me/inter/inter.css");
+html {
+  background: #0b0a10;
+}
+html * {
+  color: white;
+  transition: 0.2s;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  margin: 4rem;
+}
+
+div.tip {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  border-left: 3px solid #4362ee;
+  margin: 2rem;
+  margin-left: 0;
+}
+
+div.login * {
+  font-size: 1.2rem;
+}
+div.login div.container {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: 100px auto;
+}
+div.login input[type=checkbox] {
+  cursor: pointer;
+  transform: scale(1.5);
+  margin-right: 0.5rem;
+}
+div.login input:not([type=checkbox]), div.login button {
+  width: 500px;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  background: rgba(255, 255, 255, 0.0431372549);
+}
+div.login input:not([type=checkbox]):focus, div.login button:focus {
+  outline: none;
+}
+div.login button {
+  border: 1px solid #4362ee;
+  cursor: pointer;
+}
+div.login button:hover {
+  background: #4362ee;
+}
+
+@media (max-width: 777px) {
+  div.login div.container input:not([type=checkbox]) {
+    width: 60vw !important;
+  }
+  div.login button {
+    width: 100%;
+  }
+  body {
+    margin: 1rem;
+  }
+}
+h1 a {
+  opacity: 0.5;
+  font-size: 1rem;
+}
+
+table.timetable {
+  width: 100%;
+  height: 100%;
+}
+table.timetable td.lesson {
+  width: 50px;
+  opacity: 0.5;
+}
+table.timetable th .date {
+  font-weight: normal;
+  opacity: 0.5;
+}
+table.timetable th, table.timetable td {
+  text-align: center;
+}
+table.timetable tr * {
+  padding-bottom: 1rem;
+}
+table.timetable tr td div.entry {
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  height: 200px;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.0431372549);
+}
+table.timetable tr td div.entry span {
+  display: block;
+}
+table.timetable tr td div.entry span.title {
+  font-weight: bold;
+}/*# sourceMappingURL=plan.css.map */

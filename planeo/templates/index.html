@@ -1,0 +1,41 @@
+{% include 'components/top.html' %}
+<body>
+    <main>
+        <h1>📚 Planeo</h1>
+
+        <div class="tip">
+            Connect to the WebUntis API by filling out the login form below
+            <br>
+            (<strong>make sure that your entered data is correct!</strong>):
+        </div>
+
+        <div class="login">
+            <form method="POST">
+                <div class="container">
+                    <label>Full Name</label>
+                    <input type="text" name="name" placeholder="Walter White" autofocus/>
+                </div>
+                <div class="container">
+                    <label>WebUntis Password</label>
+                    <input type="password" name="password" placeholder="•••••••••••"/>
+                </div>
+                <div class="container">
+                    <div class="span">
+                        Agree
+                    </div>
+                    <div class="span">
+                        <input type="checkbox" id="agree-legal" name="agree-legal" value="true" required>
+                        I have read and agree to the <a href="https://onlix.me/legal#tos" target="_blank">terms of service</a>
+                        and <a href="https://onlix.me/legal#privacy" target="_blank">privacy policy</a>.                        
+                    </div>
+                </div>
+
+                <br>
+                <button type="submit">
+                    Connect to WebUntis
+                </button>
+            </form>
+        </div>
+    </main>
+</body>
+{% include 'components/end.html' %}
